@@ -7,4 +7,4 @@ Site Url: aaronbuitenwef.ca
 
 Server info:
     Node js server running on Ubuntu environment
-    Uses express module
+    Uses express, pug and sass modules
