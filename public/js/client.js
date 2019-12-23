@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.lg-heading-top', { distance: '50px' });

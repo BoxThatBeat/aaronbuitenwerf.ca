@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Lora&display=swap');
+
+div#img{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+
+}
+
+img#main{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+#title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(243, 243, 243);
+    font-family: 'Baskervville', serif; 
+    font-size: 75px;
+  }
