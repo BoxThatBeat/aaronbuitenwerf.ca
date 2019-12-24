@@ -1,25 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Baskervville|Lora&display=swap");
-div#img {
-  margin: auto;
-  width: 90%;
-  padding: 10px;
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+body {
+  margin: 0px;
 }
 
-img#main {
-  max-width: 100%;
-  height: auto;
-  width: auto\9 ;
-  /* ie8 */
+div#img {
+  background-image: url("assets/main.jpg");
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+div.container {
+  margin: 0 10vw;
+}
+
+div.content {
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#name {
+  font-weight: 200;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 6vw;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 #title {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #f3f3f3;
-  font-family: "Baskervville", serif;
-  font-size: 75px;
+  font-weight: 200;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2vw;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#about {
+  margin: 25px 25vh;
 }
 
 /*# sourceMappingURL=style.css.map */
