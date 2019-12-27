@@ -5,19 +5,17 @@ body {
 }
 
 div#img {
-  background-image: url("assets/main.jpg");
+  background-image: url("assets/bground.jpg");
   background-color: #cccccc;
   /* Used if the image is unavailable */
-  background-repeat: no-repeat;
   background-size: cover;
   /* Resize the background image to cover the entire container */
+  background-position: center;
 }
-
-div.container {
+div#img div.container {
   margin: 0 10vw;
 }
-
-div.content {
+div#img div.container div.content {
   height: 100vh;
   text-align: left;
   width: 100%;
@@ -25,27 +23,25 @@ div.content {
   justify-content: center;
   flex-direction: column;
 }
-
-#name {
+div#img div.container div.content #name {
   font-weight: 200;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 6vw;
+  font-size: 120px;
   color: #fff;
   margin-top: 0px;
   margin-bottom: 10px;
 }
-
-#title {
+div#img div.container div.content #title {
   font-weight: 200;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 2vw;
+  font-size: 40px;
   color: #fff;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 
 #about {
-  margin: 25px 25vh;
+  margin: 300px 25vh;
 }
 
 /*# sourceMappingURL=style.css.map */
