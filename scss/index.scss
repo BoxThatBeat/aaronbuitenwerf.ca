@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:100&display=swap');
+
+@import "modules/all";
+
 
 body{
     margin: 0px;
@@ -7,43 +9,69 @@ body{
 
 div#img{
 
-    background-image: url('assets/main.jpg');
-
+    background-image: url('assets/bground.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
-    background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+
+    div.container{
+        margin: 0 10vw;
+        
+        div.content{
+            height: 100vh;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            #name {
+                font-weight: 100;
+                font-family: 'Roboto', sans-serif;
+                font-size: 100px;
+                color: #fff;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            #title{
+                font-weight: 300;
+                font-family: 'Roboto', sans-serif;
+                font-size: 40px;
+                color: #fff;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+        }
+    }   
 }
 
-div.container{
-    margin: 0 10vw;
-}   
-div.content{
-    height: 100vh;
-    text-align: left;
+
+
+div#about{
+    margin: 0;
+
+    background-image: url('assets/About.jpg');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+    height: 0;
+    padding-top: 66.67%;
 
-#name {
-    font-weight: 200;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 6vw;
-    color: #fff;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
+    div.container{
+        margin: 0 10vw;
 
-#title{
-    font-weight: 200;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 2vw;
-    color: #fff;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
+        div.profile{
+            img.profilePic{
+                
+            }
 
-#about{
-    margin: 25px 25vh;
+        }
+
+        div.aboutText{
+
+        }
+    }
 }
