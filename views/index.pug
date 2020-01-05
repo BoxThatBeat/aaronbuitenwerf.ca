@@ -1,5 +1,7 @@
-html
+html(lang="en")
+	
 	head
+		meta(charset="UTF-8")
 		link(rel="stylesheet" href="/css/style.css")
 		title Aaron Buitenwerf
 	
@@ -8,9 +10,52 @@ html
 			div.container
 				div.content
 					h1#name Aaron Buitenwerf
-					p#title Developer, Photographer, Musician
+					h2#title Developer, Photographer, Musician
 
-		div#about
-			span about section
-		
-		
+
+		div.about
+			div#about-img-bground
+			div#about-img
+			img.about-img(src="/css/assets/Portrait.jpg" alt="portrait")
+			h3.about-title About me
+			div.about-text 
+				p 	I am a second year Carleton University student pursuing a bachelors degree in computer science in the computer and internet security stream, as well as a minor in Mathematics. One of my biggest passions lies with computers, from the hardware to the software. My fascination with computers started with gaming when I was younger and has evolved to be a big focus of my time and effort. 3D modelling is also something I love to do in my free time.
+				p 	I have been a percussionist since I was 9 years old. I love to experiment with different and unique instruments and I record my favorites. I’ve played in many different types of bands; school bands, worship bands, and rock bands alike. 
+				p 	Some of my other hobbies include reading novels, snowboarding and wakeboarding. More recently I’ve been getting into photography along with photo editing and I am really enjoying the results
+
+
+
+		section.portfolio
+			h1 Projects
+
+			div.projects
+				figure.project
+					img()
+					figcaption
+						h2.projectTitle project name
+						p.projectDesc short description
+						a.projectLink(href="#") Github
+						img(src="https://i.gyazo.com/edd93109859d5b71d3a326de55b7e0a1.gif" alt="Image from Gyazo" width="900")
+
+				figure.project
+					img()
+					figcaption
+						h2.projectTitle project name
+						p.projectDesc short description
+						a.projectLink(href="#") Github
+						img(src="https://i.gyazo.com/ea627c207e17411dd9ae98c49b1f6bd8.gif" alt="Image from Gyazo" width="900")
+
+				figure.project
+					img()
+					figcaption
+						h2.projectTitle project name
+						p.projectDesc short description
+						a.projectLink(href="#") Github
+
+				figure.project
+					img()
+					figcaption
+						h2.projectTitle project name
+						p.projectDesc short description
+						a.projectLink(href="#") Github
+

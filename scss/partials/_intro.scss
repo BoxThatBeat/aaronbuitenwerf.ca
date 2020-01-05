@@ -1,0 +1,20 @@
+div#img{
+
+    background-image: url('assets/bground.jpg');
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    height: 100vh;
+
+    div.container{
+        margin: 0 10vw;
+        
+        div.content{
+            height: 100vh;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }   
+}
