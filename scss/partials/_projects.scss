@@ -1,0 +1,75 @@
+
+.portfolio{
+    text-align: center;
+    padding: 10em 0;
+
+    h1{
+        text-align: center;
+        margin-top: .5em;
+        color: #000;
+    }
+
+    p{
+        text-indent: 0;
+    }
+
+    .project{
+        position: relative;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 10px 15px rgba(grey,0.45);
+        
+
+        img{
+            width: 37.6em;
+            height: 37.6em;
+            border:1px solid black;
+        }
+
+        figcaption{
+            position: absolute;
+            top:100%;
+            bottom:0;
+            right:0;
+            left:0;
+            padding: 2em;
+            background-color: rgba(rgb(253, 93, 30),0.6);
+            color:white;
+            text-align: left;
+            display:flex;
+            flex-direction: column;
+            transition: top ease-in-out 250ms;
+        }
+
+        &:hover figcaption,&:focus figcaption{
+            top: 0;
+        }
+    }
+
+    .projectLink{
+        color:white;
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    .projectTitle{
+        color: white;
+        font-size: 3em;
+        margin-bottom: auto;
+    }
+}
+
+@supports (display: grid){
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        @media (max-width: 92.25em){
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media (max-width: 62.5em){
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

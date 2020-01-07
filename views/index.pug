@@ -4,6 +4,14 @@ html(lang="en")
 		meta(charset="UTF-8")
 		link(rel="stylesheet" href="/css/style.css")
 		title Aaron Buitenwerf
+
+		link(rel="apple-touch-icon", sizes="180x180", href="/icon/apple-touch-icon.png")
+		link(rel="icon", type="image/png", sizes="32x32", href="/icon/favicon-32x32.png")
+		link(rel="icon", type="image/png", sizes="16x16", href="/icon/favicon-16x16.png")
+		link(rel="manifest", href="/icon/site.webmanifest")
+		link(rel="mask-icon", href="/icon/safari-pinned-tab.svg", color="#5bbad5")
+		meta(name="msapplication-TileColor", content="#da532c")
+		meta(name="theme-color", content="#ffffff")
 	
 	body
 		div#img
@@ -14,8 +22,7 @@ html(lang="en")
 
 
 		div.about
-			div#about-img-bground
-			div#about-img
+			div.about-img-bground
 			img.about-img(src="/css/assets/Portrait.jpg" alt="portrait")
 			h3.about-title About me
 			div.about-text 
@@ -30,12 +37,25 @@ html(lang="en")
 
 			div.projects
 				figure.project
-					img()
+					img(src="https://i.gyazo.com/edd93109859d5b71d3a326de55b7e0a1.gif" alt="Image from Gyazo")
 					figcaption
-						h2.projectTitle project name
-						p.projectDesc short description
+						h2.projectTitle Dodge
+						p.projectDesc A basic game written in python where you avoid falling objects
+						a.projectLink(href="https://github.com/BoxThatBeat/Dodge") Github	
+
+				figure.project
+					img(src="/css/assets/Cottage.jpg" alt="Render of cottage")
+					figcaption
+						h2.projectTitle Cottage 3D render
+						p.projectDesc A realistic 3D rendering made from building plans in Blender.
+						a.projectLink(href="https://github.com/BoxThatBeat/Cottage_realistic_rendering") Github
+
+				figure.project
+					img(src="https://i.gyazo.com/ea627c207e17411dd9ae98c49b1f6bd8.gif" alt="Image from Gyazo")
+					figcaption
+						h2.projectTitle School of Fish
+						p.projectDesc A multiplayer game written in python. One player is the hungry pufferfish and the other tries to help the fish survive.
 						a.projectLink(href="#") Github
-						img(src="https://i.gyazo.com/edd93109859d5b71d3a326de55b7e0a1.gif" alt="Image from Gyazo" width="900")
 
 				figure.project
 					img()
@@ -43,7 +63,6 @@ html(lang="en")
 						h2.projectTitle project name
 						p.projectDesc short description
 						a.projectLink(href="#") Github
-						img(src="https://i.gyazo.com/ea627c207e17411dd9ae98c49b1f6bd8.gif" alt="Image from Gyazo" width="900")
 
 				figure.project
 					img()
@@ -51,7 +70,7 @@ html(lang="en")
 						h2.projectTitle project name
 						p.projectDesc short description
 						a.projectLink(href="#") Github
-
+				
 				figure.project
 					img()
 					figcaption
@@ -59,3 +78,4 @@ html(lang="en")
 						p.projectDesc short description
 						a.projectLink(href="#") Github
 
+		include includes/footer.pug
