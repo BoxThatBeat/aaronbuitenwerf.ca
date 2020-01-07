@@ -5,16 +5,29 @@ div#img{
     background-position: center;
     height: 100vh;
 
-    div.container{
+    .container{
         margin: 0 10vw;
         
-        div.content{
+        .content{
             height: 100vh;
             text-align: left;
             width: 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
+            
+            .links{
+                display: inline;
+                padding-left: 0px;;
+
+                li{
+                    margin-right: 1em;
+                    display: inline;
+                    svg{
+                        width:2.5em;
+                    }
+                }
+            }
         }
     }   
 }

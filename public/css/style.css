@@ -6,6 +6,14 @@ body {
   margin: 0px;
 }
 
+svg {
+  color: white;
+}
+
+svg:hover {
+  color: #ff5537;
+}
+
 div {
   margin: 0;
   max-width: 100%;
@@ -53,16 +61,27 @@ div#img {
   background-position: center;
   height: 100vh;
 }
-div#img div.container {
+div#img .container {
   margin: 0 10vw;
 }
-div#img div.container div.content {
+div#img .container .content {
   height: 100vh;
   text-align: left;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+div#img .container .content .links {
+  display: inline;
+  padding-left: 0px;
+}
+div#img .container .content .links li {
+  margin-right: 1em;
+  display: inline;
+}
+div#img .container .content .links li svg {
+  width: 2.5em;
 }
 
 @supports (display: grid) {
@@ -205,8 +224,15 @@ div#img div.container div.content {
   text-align: center;
   padding-top: 10em;
 }
+.footer .links a {
+  margin: 1.5em;
+}
+.footer .links a svg {
+  width: 7em;
+  height: auto;
+}
 .footer p {
-  margin-top: auto;
+  margin-top: 4em;
   font-size: 1.5em;
   font-weight: fw-t;
   color: #c7c7c7;
